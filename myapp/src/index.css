@@ -1,0 +1,492 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  ;
+}
+
+.link:hover {
+  color: rgb(255, 179, 0);
+
+}
+
+.navbar-brand {
+  font-size: 27px;
+  /* background-image: url('./components/rupeeicon.png'); */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero {
+  /* border:2px solid white; */
+}
+
+#box1 {
+  width: 45%;
+  /* border:2px solid red; */
+  /* color:red; */
+  box-shadow: inset -4px -4px 8px 8px rgb(255, 179, 0);
+
+}
+
+#box2 {
+  width: 55%;
+  height: 700px;
+  /* border:2px solid red; */
+  background-color: black;
+}
+
+#box2 video {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.text {
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text2 {
+  font-weight: 700;
+  ;
+}
+
+.text3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  ;
+}
+
+.input {
+  border-radius: 10px;
+  border: 2px solid orange;
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  color: white;
+
+
+  /* margin:10px */
+}
+
+.space {
+  width: 100%;
+}
+
+#addExpense {
+  /* padding: 50px; */
+  border: 1px solid rgb(68, 66, 66);
+  border-radius: 20px;
+
+}
+
+#expense p:first-child {
+  width: 400px;
+}
+
+#addExpenseBox {
+  /* background-color:rgb(203, 243, 243); */
+  color: white;
+  width: 50%;
+  height: 350px;
+  /* border: 2px solid white; */
+  padding: 10px 50px;
+  background-color: rgb(32, 31, 31);
+  border-radius: 15px;
+  overflow: auto;
+
+}
+
+.text3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown {
+  color: white;
+  /* background-color: aquamarine; */
+
+}
+
+#expenseList {
+  /* border: 2px solid orange; */
+  flex-wrap: wrap;
+  border: 1px solid rgb(68, 66, 66);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.listbar {
+  height: 90px;
+  /* padding: 10px 30px; */
+  border-radius: 10px;
+  background-color: rgb(32, 31, 31);
+  ;
+
+}
+
+.listbox {
+  /* width: 500px; */
+  margin: 0px 20px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#totalExpenseBar {
+  width: 50%;
+  /* background-color: green;; */
+  border: 2px solid green;
+  overflow: auto;
+
+}
+
+#expendedAmount {
+  font-size: 25px;
+}
+
+#describeExpense {
+  font-size: 15px;
+}
+
+.dropdown-item {
+  background-color: white;
+}
+
+#expense {
+  color: white;
+  margin: 10px;
+  /* border:2px solid rgb(16, 11, 11); */
+  border-top: 1px solid rgb(68, 66, 66);
+
+  overflow: hidden;
+
+
+  /* background-color: white; */
+}
+
+.time {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+#herotext {
+  transition: 0.5s;
+  /* background-color: orange; */
+  transform-style: preserve-3d;
+  animation: animateherotext 5s ease-in 4s infinite;
+
+
+  /* animation:animateherotext 1s ease ; */
+}
+
+.filterbar {
+  border: 1px solid rgb(68, 66, 66);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#herotext:hover {
+
+  /* transform: translateY(-20px); */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+}
+
+@keyframes animateherotext {
+
+  2%,
+  18% {
+    transform: translate3d(-15px, 0, 0);
+    color: orange;
+  }
+
+  4%,
+  16% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  6%,
+  10%,
+  14% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  8%,
+  12% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  18.1% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.addelement {
+  width: 40%;
+  padding: 0;
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  transition: 0.5s ease;
+  display: block;
+  overflow: hidden;
+  /* height: 300px; */
+  display: none;
+
+}
+
+#addelement2 {
+  height: 140px;
+}
+
+#addelement2:target {
+  /* width:40%; */
+  border: 2px solid black;
+  /* opacity:0.5 */
+  display: block;
+}
+
+/* #addelement1:target .closebtn {
+  display: block;
+} */
+
+.closebtn {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  /* border:2px solid red; */
+}
+
+#hammenu,
+#closenav {
+  display: none;
+}
+
+/* .filterbar{
+  height:
+} */
+
+
+/* .tofill{
+  margin:2px 10px;
+} */
+
+@media screen and (max-width:1140px) {
+  #box2 video {
+    max-width: 600px;
+    height: 500px;
+  }
+
+  #box1 {
+    text-wrap: wrap;
+  }
+
+  #expendedAmount {
+    font-size: 20px;
+  }
+
+  #describeExpense {
+    font-size: 10px;
+  }
+
+  .listbar {
+    padding: 0 0px
+      /* width: 200px; */
+  }
+
+
+}
+
+@media screen and (max-width:650px) {
+  #hammenu {
+    display: block;
+  }
+
+  #navlinks {
+    display: none;
+    /* height:0 */
+  }
+
+  #closenav {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: red;
+    ;
+  }
+
+  #navlinks:target {
+    display: block;
+    ;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    ;
+  }
+
+  .time {
+    font-size: small;
+  }
+
+  .listbox {
+    border:2px solid rgb(68, 66, 66) ;
+    /* margin:15px; */
+    /* width:300px; */
+    /* border:2px solid white; */
+  }
+  #expenseList{
+    overflow-x: hidden;
+  }
+
+  .listbar {
+
+    width: 450px;
+    flex-direction: row;
+    align-items: center;
+    /* padding:0px; */
+
+
+  }
+
+  .listtext {
+    position: relative;
+    left: 0px;
+    /* border: 1px solid white; */
+  }
+
+  .listsideimage {
+    position: relative;
+    left: -150px;
+    /* border: 1px solid white; */
+
+  }
+
+  #totalExpenseBar {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  #addelement2 {
+    position: absolute;
+    left: 25px;
+    width: 300px;
+    height: fit-content
+  }
+
+  .changeinput {
+    flex-direction: column;
+  }
+
+  #box2 {
+    width: 100%;
+    height: 500px;
+  }
+
+  #box2 {
+    padding: 30px;
+  }
+
+  #box1 {
+    width: 100%;
+    height: 500px;
+
+  }
+
+  #addExpenseBox {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  
+  .text{
+    font-size: 30px;
+  }
+
+  .listtext {
+    left: -40px;
+    width: 150px;
+    /* border: 2px solid white; */
+
+  }
+
+  .listsideimage img{
+    width:20px;
+    height:20px;
+    /* left: -130px; */
+    /* border: 2px solid white; */
+
+  }
+  .text{
+   
+    font-size: 30px;;
+    /* border:2px solid white; */
+  }
+  .listbox{
+    overflow: hidden;
+  }
+  .categoryicon{
+    height:40px;
+    width:40px;
+    margin-right: 0px;
+  }
+
+  .listbar {
+    
+    overflow: hidden;
+    border:2px solid white;
+    /* width: 300px; */
+    /* flex-direction: column; */
+    left:0
+    /* width:80%; */
+  }
+}
